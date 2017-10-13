@@ -19,11 +19,16 @@ public class Filme implements Serializable {
 
     private Categoria categoria;
 
-    public Filme(String local, String nomeFilme, String duracao, String horarios) {
-        this.local = local;
+
+
+    public Filme(String nomeFilme ,String local, String duracao, String horarios,String categoria) {
+        Categoria c = Categoria.valueOf(categoria); //to enum
+       // c.name(); //enum tu string
         this.nomeFilme = nomeFilme;
+        this.local = local;
         this.duracao = duracao;
         this.horarios = horarios;
+        this.categoria=c;
     }
 
     public String getLocal() {

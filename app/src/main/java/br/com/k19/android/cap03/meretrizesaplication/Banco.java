@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class Banco extends SQLiteOpenHelper {
 
     public static final String BANCO = "Nome_Banco";
-    public static final int VERSAO = 1;
+    public static final int VERSAO = 3;
     private Context context;
 
     public static final String TABELA = "FILMES";
@@ -16,10 +16,11 @@ public class Banco extends SQLiteOpenHelper {
     public static final String COL_LOCAL = "LOCAL";
     public static final String COL_DURACAO = "DURACAO";
     public static final String COL_HORARIO = "HORARIO";
+    public static final String COL_CATEGORIA = "CATEGORIA";
 
-    private static final String DATABASE_CREATE = "create table " + TABELA + "(" + COL_ID + "integer primary key autoincrement ,"
+    private static final String DATABASE_CREATE = "create table " + TABELA + "(" + COL_ID + " Integer primary key autoincrement ,"
             + COL_TITULO + "" +
-            " text not null," + COL_LOCAL + " text not null"+ COL_DURACAO + " text not null"+ COL_HORARIO + " text not null";
+            " text not null," + COL_LOCAL + " text not null, "+ COL_DURACAO + " text not null, "+ COL_HORARIO + " text not null,"+COL_CATEGORIA+" text not null"+");";
 
     public Banco(Context context) {
         super(context, BANCO, null, VERSAO);
@@ -33,6 +34,7 @@ public class Banco extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
+    db.execSQL("drop table "+Banco.TABELA);
+        onCreate(db);
     }
 }
