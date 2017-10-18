@@ -35,6 +35,9 @@ public class MeretrizesActivity extends AppCompatActivity {
             Filme meumalvado = new Filme("MEU MALVADO FAVORITO 3", "UCI Orient", "96 min", "10h50, 15h20", Categoria.MEUMALVADOFAVORITO.name());
             meumalvado.setCategoria(Categoria.MEUMALVADOFAVORITO);
             f.insert(meumalvado);
+            Filme mylittle = new Filme("MY LITTLE PONY: O FILME", "UCI Orient", "99 min", "10h40, 13h00", Categoria.MYLITTLE.name());
+            mylittle.setCategoria(Categoria.MYLITTLE);
+            f.insert(mylittle);
         }
 
         List<Filme> filmes = f.listar();

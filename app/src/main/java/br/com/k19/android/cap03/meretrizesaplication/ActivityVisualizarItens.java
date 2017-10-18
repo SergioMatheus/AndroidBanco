@@ -34,6 +34,8 @@ public class ActivityVisualizarItens extends AppCompatActivity {
             imagem.setImageResource(R.drawable.kingsman);
         }else if(categoria.equals(Categoria.MEUMALVADOFAVORITO)){
             imagem.setImageResource(R.drawable.meumalvado);
+        }else if(categoria.equals(Categoria.MYLITTLE)) {
+            imagem.setImageResource(R.drawable.mylittle);
         }
     }
 }
