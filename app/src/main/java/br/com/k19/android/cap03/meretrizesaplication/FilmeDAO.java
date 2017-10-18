@@ -3,6 +3,7 @@ package br.com.k19.android.cap03.meretrizesaplication;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,16 +26,18 @@ public class FilmeDAO {
         bd.getWritableDatabase().close();
     }
 
-    public List<Filme> listar(){
-        List<Filme> lista= new ArrayList<>();
-        Cursor c = bd.getReadableDatabase().query("filmes",new String[]{"titulo,local,duracao,horario,categoria"},null,null,null,null,null);
-        Log.d("APLICACAO",c.getCount()+"");
-        c.moveToFirst();
+    public List<Filme> listar() {
+        List<Filme> lista = new ArrayList<>();
+        Cursor c = bd.getReadableDatabase().query("filmes", new String[]{"titulo,local,duracao,horario,categoria"}, null, null, null, null, null);
+        Log.d("APLICACAO", c.getCount() + "");
+        if(c.moveToNext()){
+            c.moveToFirst();
         do {
-            Filme f = new Filme(c.getString(0),c.getString(1),c.getString(2),c.getString(3),c.getString(4));
+            Filme f = new Filme(c.getString(0), c.getString(1), c.getString(2), c.getString(3), c.getString(4));
             lista.add(f);
-        }while(c.moveToNext());
+        } while (c.moveToNext());
         bd.getWritableDatabase().close();
+        }
         return lista;
     }
     public void excluir (Filme filme){
