@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.com.k19.android.cap03.meretrizesaplication.MeretrizesActivity"
-    android:orientation="vertical">
+    tools:context="br.com.k19.android.cap03.meretrizesaplication.CinemationActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    >
 
 
     <ListView

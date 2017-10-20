@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void metodu(View v) {
-        Intent i = new Intent(this,MeretrizesActivity.class);
+        Intent i = new Intent(this,CinemationActivity.class);
         startActivity(i);
     }
 }

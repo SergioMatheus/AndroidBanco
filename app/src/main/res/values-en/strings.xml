@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="lista_filmes">Movie list</string>
+    <string name="visualizar_lista_filmes">Select to view the movie list</string>
+    <string name="titulo_filme">Movie title</string>
+    <string name="local_filme">On display at</string>
+    <string name="horario_filme">Movie schedule</string>
+    <string name="duracao_filme">Movie length</string>
+
+
+</resources>

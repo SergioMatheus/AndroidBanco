@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">MeretrizesAplication</string>
+    <string name="app_name">Cinemation</string>
+
+    <string name="lista_filmes">Lista de Filmes</string>
+    <string name="visualizar_lista_filmes">Selecione para visualizar a lista de filmes</string>
+    <string name="titulo_filme">Titulo do Filme</string>
+    <string name="local_filme">Local em exibição</string>
+    <string name="horario_filme">Horario do Filme</string>
+    <string name="duracao_filme">Duração do Filme</string>
+
+
 </resources>

@@ -5,25 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#ff6eb6ff"
+    android:background="@color/colorPrimary"
     tools:context="br.com.k19.android.cap03.meretrizesaplication.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Lista de Filmes"
+        android:text="@string/lista_filmes"
         android:textSize="30dp"
         android:textStyle="bold"
-        android:textColor="@android:color/holo_red_dark"/>
+        android:textColor="@android:color/holo_red_dark"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        />
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#10ff00"
+        android:background="#66ccff"
         android:onClick="metodu"
-        android:text="Selecione para visualizar a lista de filmes" />
+        android:text="@string/visualizar_lista_filmes" />
 
     <ImageView
         android:id="@+id/imageView"

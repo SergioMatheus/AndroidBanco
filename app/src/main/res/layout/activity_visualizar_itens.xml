@@ -2,7 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#9999ff"
+    >
 
 
     <ImageView
@@ -14,41 +16,34 @@
     <LinearLayout
         android:layout_gravity="center"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/tituloFilme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Titulo do Filme"
+            android:text="@string/titulo_filme"
             android:textSize="30dp" />
         <TextView
             android:id="@+id/localFilme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Local em exibição"
+            android:text="@string/local_filme"
             android:textSize="20dp" />
 
         <TextView
             android:id="@+id/horarioDoFilme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Horario do Filme"
+            android:text="@string/horario_filme"
             android:textSize="20dp" />
         <TextView
             android:id="@+id/duracaoFilme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Duração do Filme"
+            android:text="@string/duracao_filme"
             android:textSize="20dp" />
     </LinearLayout>
-        <ImageView
-            android:layout_gravity="right"
-            android:id="@+id/faixaetaria"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-
-        />
 
 </LinearLayout>
