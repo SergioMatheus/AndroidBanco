@@ -30,12 +30,40 @@ public class ActivityVisualizarItens extends AppCompatActivity {
         Categoria categoria = f.getCategoria();
         if (categoria.equals(Categoria.PICAPAU)) {
             imagem.setImageResource(R.drawable.picapau);
-        }else if(categoria.equals(Categoria.KINGSMAN)){
+        } else if (categoria.equals(Categoria.KINGSMAN)) {
             imagem.setImageResource(R.drawable.kingsman);
-        }else if(categoria.equals(Categoria.MEUMALVADOFAVORITO)){
+        } else if (categoria.equals(Categoria.MEUMALVADOFAVORITO)) {
             imagem.setImageResource(R.drawable.meumalvado);
-        }else if(categoria.equals(Categoria.MYLITTLE)) {
+        } else if (categoria.equals(Categoria.MYLITTLE)) {
             imagem.setImageResource(R.drawable.mylittle);
+        } else if (categoria.equals(Categoria.ITCOISA)) {
+            imagem.setImageResource(R.drawable.itcoisa);
+        } else if (categoria.equals(Categoria.DEVOLTA)) {
+            imagem.setImageResource(R.drawable.devolta);
+        } else if (categoria.equals(Categoria.EMOJI)) {
+            imagem.setImageResource(R.drawable.emoji);
+        } else if (categoria.equals(Categoria.ALEMMORTE)) {
+            imagem.setImageResource(R.drawable.alemmorte);
+        } else if (categoria.equals(Categoria.DIVINA)) {
+            imagem.setImageResource(R.drawable.divina);
+        } else if (categoria.equals(Categoria.NOZES)) {
+            imagem.setImageResource(R.drawable.nozes);
+        } else if (categoria.equals(Categoria.AMORTE)) {
+            imagem.setImageResource(R.drawable.amorte);
+        } else if (categoria.equals(Categoria.BLADE)) {
+            imagem.setImageResource(R.drawable.blade);
+        } else if (categoria.equals(Categoria.LEGO)) {
+            imagem.setImageResource(R.drawable.lego);
+        } else if (categoria.equals(Categoria.CUECA)) {
+            imagem.setImageResource(R.drawable.cueca);
+        } else if (categoria.equals(Categoria.TEMPESTADE)) {
+            imagem.setImageResource(R.drawable.tempestade);
+        } else if (categoria.equals(Categoria.UMARAZAO)) {
+            imagem.setImageResource(R.drawable.umarazao);
+        } else if (categoria.equals(Categoria.ENTREIRMAS)) {
+            imagem.setImageResource(R.drawable.entreirmas);
+        } else if (categoria.equals(Categoria.PIORALUNO)) {
+                imagem.setImageResource(R.drawable.pioraluno);
         }
     }
 }
