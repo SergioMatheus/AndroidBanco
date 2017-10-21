@@ -13,11 +13,6 @@ import java.util.List;
 
 public class CinemationActivity extends AppCompatActivity {
 
-
-    public void cargaInicial() {
-
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,11 +56,7 @@ public class CinemationActivity extends AppCompatActivity {
             Filme pioraluno = new Filme("COMO SE TORNAR O PIOR ALUNO DA ESCOLAS", "UCI Orient", "103 min", "Nacional - 11h50, 14h10, 16h30, 18h50, 21h10, 23h25", Categoria.PIORALUNO.name());
             f.insert(pioraluno);
         }
-
-
-
         List<Filme> filmes = f.listar();
-
         ArrayAdapter<Filme> adapter = new ArrayAdapter<Filme>(CinemationActivity.this, android.R.layout.simple_list_item_1, filmes);
         ListView lv = (ListView) findViewById(R.id.listview);
         lv.setAdapter(adapter);

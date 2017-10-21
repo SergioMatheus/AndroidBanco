@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class Banco extends SQLiteOpenHelper {
 
     public static final String BANCO = "Nome_Banco";
-    public static final int VERSAO = 12;
+    public static final int VERSAO = 14;
     private Context context;
 
     public static final String TABELA = "FILMES";
@@ -37,5 +37,4 @@ public class Banco extends SQLiteOpenHelper {
     db.execSQL("drop table "+Banco.TABELA);
         onCreate(db);
     }
-
 }

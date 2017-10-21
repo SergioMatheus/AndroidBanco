@@ -22,12 +22,33 @@ public class ActivityVisualizarItens extends AppCompatActivity {
                 findViewById(R.id.localFilme);
         ImageView imagem = (ImageView)
                 findViewById(R.id.imagemFilme);
+        ImageView imagemFaixa = (ImageView)
+                findViewById(R.id.imagemFaixaEt);
 
         nome.setText(f.getNomeFilme());
         duracao.setText(f.getDuracao());
         horario.setText(f.getHorarios());
         local.setText(f.getLocal());
         Categoria categoria = f.getCategoria();
+        switch (categoria.getFaixaEt()) {
+            case 0:
+                imagemFaixa.setImageResource(R.drawable.l);
+                break;
+            case 10:
+                imagemFaixa.setImageResource(R.drawable.f10);
+                break;
+            case 12:
+                imagemFaixa.setImageResource(R.drawable.f12);
+                break;
+            case 14:
+                imagemFaixa.setImageResource(R.drawable.f14);
+                break;
+            case 16:
+                imagemFaixa.setImageResource(R.drawable.f16);
+                break;
+//            case 18:   NÃO UTILIZADO ATÉ O DADO MOMENTO, SEM FILMES PARA ESTA CATEGORIA
+//                break;
+        }
         if (categoria.equals(Categoria.PICAPAU)) {
             imagem.setImageResource(R.drawable.picapau);
         } else if (categoria.equals(Categoria.KINGSMAN)) {

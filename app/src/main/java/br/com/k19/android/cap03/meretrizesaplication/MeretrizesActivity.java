@@ -7,18 +7,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
 
 public class MeretrizesActivity extends AppCompatActivity {
-
-
-    public void cargaInicial() {
-
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
